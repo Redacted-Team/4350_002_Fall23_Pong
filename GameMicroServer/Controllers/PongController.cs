@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
 
-namespace Tetris
+namespace Pong
 {
     [ApiController]
     [Route("[controller]")]
-    public class TetrisController : ControllerBase
+    public class PongController : ControllerBase
     {
         private static readonly List<GameInfo> TheInfo = new List<GameInfo>
         {
@@ -49,9 +49,9 @@ namespace Tetris
 
         };
 
-        private readonly ILogger<TetrisController> _logger;
+        private readonly ILogger<PongController> _logger;
 
-        public TetrisController(ILogger<TetrisController> logger)
+        public PongController(ILogger<PongController> logger)
         {
             _logger = logger;
         }
