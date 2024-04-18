@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["GameMicroServer/Pong.csproj", "PongMicroService/"]
+COPY ["Pong/Pong.csproj", "PongMicroService/"]
 RUN dotnet restore "PongMicroService/Pong.csproj"
 COPY . .
-WORKDIR "/src/GameMicroServer"
+WORKDIR "/src/Pong"
 RUN dotnet build "Pong.csproj" -c Release -o /app/build
 
 FROM build AS publish
