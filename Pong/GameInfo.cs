@@ -1,4 +1,4 @@
-﻿namespace Pong
+namespace Pong
 {
     public class GameInfo
     {
