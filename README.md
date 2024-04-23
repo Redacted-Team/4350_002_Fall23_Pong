@@ -10,8 +10,8 @@
 This is a microservice that contains game information for Pong
 
 ### Project Structure:
-* The application handles HTTP calls in the SnakeController.cs file in the /GameMicroServer/Controllers directory.
-* It only handles an HTTP Get call to the path /Snake. So if the application was running locally, you would call [http://localhost/Snake](http://localhost/Snake).
+* The application handles HTTP calls in the PongController.cs file in the /GameMicroServer/Controllers directory.
+* It only handles an HTTP Get call to the path /Snake. So if the application was running locally, you would call [http://localhost/Pong](http://localhost/Pong).
 * This application is deployed alongside the BucStop project with docker compose, see [BOBBY Project](https://github.com/chrisseals98/BOBBY) for more details.
 
 ### Help
